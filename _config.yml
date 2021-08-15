@@ -1,1 +1,13 @@
 theme: jekyll-theme-cayman
+url: "https://bunhisa.github.io/bunguhisamatsu/"
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "monthly"
+    priority_name: "0.5"
