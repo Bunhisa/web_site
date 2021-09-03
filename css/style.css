@@ -135,6 +135,22 @@ hr {
   font-weight: 400;
 }
 
+/* 「さらに見る」ボタン */
+.readmore_round_button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-decoration:none;
+    line-height: 50px;
+    outline: none;
+
+    background-color: #666;
+    color: #fff;
+
+    border-radius: 100vh;
+}
+
 /* Green */
 
 #green {
@@ -155,21 +171,6 @@ hr {
   font-size: 20px;
 }
 
-/* 「さらに見る」ボタン */
-.readmore_round_button {
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    text-decoration:none;
-    line-height: 50px;
-    outline: none;
-
-    background-color: #666;
-    color: #fff;
-
-    border-radius: 100vh;
-}
 
 /* Social Links */
 
