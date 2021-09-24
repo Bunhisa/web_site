@@ -153,6 +153,12 @@ hr {
 
 
 /* Green */
+.pc-dsp { display:block; }
+.sp-dsp { display:none; }
+@media only screen and (max-width : 720px){
+.pc-dsp { display:none; }
+.sp-dsp { display:block; }
+}
 
 #green {
   background-color: #74cfae;
@@ -213,12 +219,6 @@ hr {
 
 .grid img:hover {
   opacity: 1;
-}
-.pc-dsp { display:block; }
-.sp-dsp { display:none; }
-@media only screen and (max-width : 720px){
-.pc-dsp { display:none; }
-.sp-dsp { display:block; }
 }
 
 
