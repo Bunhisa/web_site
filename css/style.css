@@ -214,10 +214,14 @@ hr {
 .grid img:hover {
   opacity: 1;
 }
-.test {
-  display: none;
+/*PCの場合*/
+.pc	{ display:inline!important; }
+.mb	{ display:none!important; }
+@media screen and (max-width: 768px) {
+/*タブレット、スマホの場合*/
+.pc	{ display:none!important; }
+.mb { display:inline!important; }
 }
-
 
 /* Copyrights */
 
