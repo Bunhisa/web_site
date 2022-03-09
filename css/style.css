@@ -4,7 +4,7 @@
 * Author: TemplateMag.com
 * License: https://templatemag.com/license/
 */
-*/a
+
 body {
   background-color: #f2f2f2;
   font-family: "Lato";
@@ -86,7 +86,10 @@ hr {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   color: #ffffff;
-  background-color: #74cfae;
+
+    border-radius: 10px 10px 10px 10px;
+  
+  background-color: #08ACFE;
 }
 
 .navbar-brand {
@@ -97,7 +100,7 @@ hr {
 
 .btn-theme {
   color: #ffffff;
-  background-color: #74cfae;
+  background-color: #08ACFE;
   border-color: transparent;
 }
 
@@ -127,7 +130,7 @@ hr {
   font-size: 90px;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #74cfae;
+  color: #08ACFE;
 }
 
 #hello h2 {
@@ -135,27 +138,10 @@ hr {
   font-weight: 400;
 }
 
-/* 「さらに見る」ボタン */
-.readmore_round_button {
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    text-decoration:none;
-    line-height: 50px;
-    outline: none;
-
-    background-color: #666;
-    color: #fff;
-
-    border-radius: 100vh;
-}
-
-
 /* Green */
 
 #green {
-  background-color: #74cfae;
+  background-color: #08ACFE;
   padding-top: 50px;
   margin-bottom: 0px;
 }
@@ -173,6 +159,7 @@ hr {
 }
 
 
+
 /* Social Links */
 
 #social {
@@ -181,7 +168,7 @@ hr {
 
 #social i {
   font-size: 50px;
-  color: #74cfae;
+  color: #08ACFE;
 }
 
 #social .col-md-3:hover {
@@ -196,7 +183,7 @@ hr {
 
 #f {
   padding-top: 20px;
-  background-color: #74cfae;
+  background-color: #08ACFE;
 }
 
 #f p {
@@ -207,20 +194,30 @@ hr {
 
 /* Image Opacity */
 
+
 .grid img {
   opacity: .7;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .grid img:hover {
-  opacity: 1;
+  border-radius: 20px 20px 20px 20px;
 }
+
+/*tiz*/
+
+.tiz {
+  opacity: .7;
+  border-radius: 20px 20px 20px 20px;
+}
+
 
 
 /* Copyrights */
 
 #copyrights {
   background: #222222;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -230,9 +227,9 @@ hr {
 }
 
 #copyrights a {
-  color: #74cfae;
+  color: #08ACFE;
 }
 
 .credits {
-  color: #999;
+  color: #fff;
 }
