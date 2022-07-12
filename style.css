@@ -269,3 +269,137 @@ hr {
 	background-color: #08ACFE;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 640px) {
+
+  #col-lg-4s {
+    background-image: url(haikei.png);
+    font-family: "myfont";
+    font-weight: 700;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 70px;
+    justify-content: center;
+    padding-right:10px;
+  }
+  
+
+  
+
+  /* Links */
+  
+  a {
+    color: #f85c37;
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+  }
+  
+  a:hover, a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+  }
+  
+  a:before, a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+  }
+  
+  /* Bootstrap Modifications */
+
+  
+  /* WRAP SECTIONS */
+  
+  /* hello */
+  
+  
+  /* Green */
+  
+  #green {
+    background-color: #08ACFE;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
+    padding-top: 50px;
+    margin-bottom: 0px;
+  }
+  
+  #green h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+  
+  #green p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  
+  
+  /* Social Links */
+
+  /* Image Opacity */
+  
+  
+  .grid img {
+    width: 325px;
+    height: auto;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
+
+
+  }
+  
+  
+  .grid img:hover {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 8xp rgba(0, 0, 0, .5);
+  }
+  
+  /*tiz*/
+  
+  .tiz {
+    opacity: .7;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
+  }
+  
+
+
+  
+  /* 上に戻るボタン */
+  .pagetop {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: 3.3rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .pagetop:hover {
+    color: #fff !important;
+    background-color: #08ACFE;
+    text-decoration: none;
+  }
+  
+}
