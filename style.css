@@ -6,7 +6,7 @@
 */
 
 body {
-  background-color: #f2f2f2;
+  background-image: url(haikei.png);
   font-family: "Lato";
   font-weight: 300;
   font-size: 16px;
@@ -15,6 +15,7 @@ body {
   -webkit-overflow-scrolling: touch;
   margin-top: 70px;
 }
+
 
 /* Titles */
 
@@ -198,10 +199,13 @@ hr {
 .grid img {
   opacity: .7;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
 }
+
 
 .grid img:hover {
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
 }
 
 /*tiz*/
@@ -209,20 +213,28 @@ hr {
 .tiz {
   opacity: .7;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
 }
 
+
+
+#new { font-family: "M PLUS 1p"; }
 
 
 /* Copyrights */
 
 #copyrights {
   background: #222222;
+
   padding: 10px 0;
   text-align: center;
 }
 
 #copyrights p {
   margin-bottom: 5px;
+
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+
   color: #fff;
 }
 
@@ -232,4 +244,28 @@ hr {
 
 .credits {
   color: #fff;
+}
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #08ACFE;
+	text-decoration: none;
 }
