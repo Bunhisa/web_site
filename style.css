@@ -6,7 +6,7 @@
 */
 
 body {
-  background-image: url(haikei.png);
+  background-color: #dde8ff;
   font-family: "Lato";
   font-weight: 300;
   font-size: 16px;
@@ -91,7 +91,10 @@ hr {
     border-radius: 10px 10px 10px 10px;
   
   background-color: #08ACFE;
+  
 }
+
+
 
 .navbar-brand {
   font-size: 60px;
@@ -268,6 +271,61 @@ hr {
 	color: #fff !important;
 	background-color: #08ACFE;
 	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+
+
+  body {
+    background-color: #222222;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 70px;
+  }
+
+  #copyrights {
+    background: #ffffff;
+  
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  #copyrights p {
+    margin-bottom: 5px;
+  
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+  
+    color: rgb(10, 10, 10);
+  }
+  
+  #copyrights a {
+    color: #08ACFE;
+  }
+  
+  .credits {
+    color: #fff;
+  }
+
+  .pagetop {
+    color: #222222;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: 3.3rem;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 640px) {
