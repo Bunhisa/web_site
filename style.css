@@ -1,244 +1,478 @@
-/**
-* Template Name: Bolt
-* Template URL: https://templatemag.com/bolt-bootstrap-agency-template/
-* Author: TemplateMag.com
-* License: https://templatemag.com/license/
-*/
 
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: #ffffff;
-  font-family: "Lato";
-  font-weight: 300;
-  font-size: 16px;
-  color: #555;
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
-  margin-top: 70px;
-}
-
-
-/* Titles */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway";
-  font-weight: 300;
-  color: #333;
-}
-
-/* Paragraph & Typographic */
-
-p {
-  line-height: 28px;
-  margin-bottom: 25px;
-}
-
-.centered {
-  text-align: center;
-}
-
-.mt {
-  margin-top: 40px;
-}
-
-/* Links */
-
-a {
-  color: #f85c37;
-  word-wrap: break-word;
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover, a:focus {
-  color: #7b7b7b;
-  text-decoration: none;
-  outline: 0;
-}
-
-a:before, a:after {
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-/* Bootstrap Modifications */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0;
   padding: 0;
-}
-
-.navbar {
-  font-weight: 800;
-  font-size: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #ffffff;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-  color: #ffffff;
-
-    border-radius: 10px 10px 10px 10px;
-  
-  background-color: #08ACFE;
-  
-}
-
-
-
-.navbar-brand {
-  font-size: 60px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.btn-theme {
-  color: #ffffff;
-  background-color: #08ACFE;
-  border-color: transparent;
-}
-
-.btn {
-  padding: 10px 30px;
-  margin-bottom: 0;
-  font-size: 18px;
-  border: 5px solid transparent;
-  border-radius: 0px;
-}
-
-.lead {
-  letter-spacing: 1px;
-}
-
-/* WRAP SECTIONS */
-
-/* hello */
-
-#hello {
-  width: 100%;
-  padding-top: 250px;
-  padding-bottom: 250px;
-}
-
-#hello h1 {
-  font-size: 90px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: #08ACFE;
-}
-
-#hello h2 {
-  color: #c0c0c0;
-  font-weight: 400;
-}
-
-/* Green */
-
-#green {
-  background-color: #08ACFE;
-  padding-top: 50px;
-  margin-bottom: 0px;
-}
-
-#green h3 {
-  color: white;
-  font-weight: 400;
-  margin-bottom: 35px;
-}
-
-#green p {
-  color: white;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-
-
-/* Social Links */
-
-#social {
-  padding: 40px 0;
-}
-
-#social i {
-  font-size: 50px;
-  color: #08ACFE;
-}
-
-#social .col-md-3:hover {
   background-color: #f5f5f5;
 }
-
-#social .col-md-3 {
-  padding: 30px;
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-/* Footer */
-
-#f {
-  padding-top: 20px;
-  background-color: #08ACFE;
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
 }
 
-#f p {
-  color: white;
-  text-align: right;
-  font-weight: 400;
+/* 019 */
+.button019 a {
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 16pt;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 15px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  border-radius: 30px;
+  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
 }
 
-/* Image Opacity */
+.button019 a:after {
+content: "";
+position: absolute;
+top: 50%;
+bottom: 0;
+right: 2rem;
+font-family: 'Kiwi Maru', serif;
+font-size: 16pt;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 0.3s;
+width: 6px;
+height: 6px;
+border-top: solid 2px currentColor;
+border-right: solid 2px currentColor;
+transform: translateY(-50%) rotate(45deg);
+}
+.button019 a:hover {
+background: #08acfe;
+color: #FFF;
+}
+.button019 a:hover:after {
+right: 1.4rem;
+}
 
+header {
+  padding: 10px 6% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom:1px solid #ccc;
+  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
 
-.grid img {
-  opacity: .7;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
+.headimg {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.headnav{
+  font-size: 2em;
+  font-family: 'Darumadrop One', cursive;
+}
+
+.headnav li {
+  margin: 0 0 0 15px;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+h1 {
+  margin: 0; padding: 0;
+  font-size: 20px;
+}
+a {	
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+p{
+  font-size:5em;
 }
 
 
-.grid img:hover {
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+.homepic{
+  width: 30%;
+  margin-top: 10cm;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: 'Darumadrop One', cursive;
+  font-size: 48pt;
+  color:#252525;
+}
+.homesetsumei{
+  font-family: 'Kiwi Maru', serif;
+  margin-top: 12pt;
+  text-align: center;
+  font-size: 20pt;
+  color: #4b4b4b;
+}
+.homesetsumei span{
+  background: linear-gradient(transparent 60%, #08acfe7e 60%);
+  background-repeat: no-repeat;
+  background-size: 0;/*マーカー非表示*/
+  transition:all 1s;
 }
 
-/*tiz*/
+/*ホバー時*/
+.homesetsumei span:hover {
+  background-size: 100%;/*マーカーが文字全体に広がる*/
+}
 
-.tiz {
-  opacity: .7;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+.whatsetsumei{
+  margin-top: 6cm;
+  padding: 10px;
+  background-color: #08acfe;
+}
+
+.whatsetsumei img{
+  margin-left: 6cm;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.whatsetsumei p{
+  margin-top: 0px;
+  color :#f5f5f5;
+  text-align: center;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.whatsetsumei h1{
+  margin-top: 20px;
+  color :#f5f5f5;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+
+.whatsetsumei span{
+  background: linear-gradient(transparent 60%, #feee087e 60%);
+  background-repeat: no-repeat;
+  background-size: 0;/*マーカー非表示*/
+  transition:all 1s;
+}
+
+/*ホバー時*/
+.whatsetsumei span:hover {
+  background-size: 100%;/*マーカーが文字全体に広がる*/
+}
+
+.info h1{
+  margin-top: 1cm;
+  color :#252525;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+
+.info p{
+  margin-top: 0px;
+  color :#252525;
+  text-align: left;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+
+.infobox{
+  margin-top: 30px;
+  align-items: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.infobox ndt{
+  color:#08acfe;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 44pt;
+  float:left;
+}
+
+.infobox dt{
+  color:#252525;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 44pt;
+  float:left;
+}
+.infobox dd{
+  color:#252525;
+  margin-left:280px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 26pt;
+  border-bottom: 2px solid #4b4b4b;
+}
+
+.infobox dl{
+  color:#4b4b4b;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  margin-left:280px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+}
+
+ /*アイコンサイズの設定 */
+ .material-icons.md-18 {
+  text-align: left;
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  text-align: left;
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  text-align: left;
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  text-align: left;
+  font-size: 48px;
+}
+.material-icons.md-64 {
+  text-align: left;
+  font-size: 64px;
+}
+.material-icons.md-128 {
+  text-align: left;
+  font-size: 128px;
+}
+.material-icons.md-256 {
+  text-align: left;
+  font-size: 256px;
+}
+
+/* 明るい背景色で、黒いアイコンとして使うとき*/
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+/* 暗い背景色で、白いアイコンとして使うとき*/
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
+.photo h1{
+  margin-top: 1cm;
+  color :#252525;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.photo p{
+  margin-top: 0px;
+  color :#252525;
+  text-align: center;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.photo ul {
+  display: flex;
+  justify-content: center;
+}
+.photo img{
+  width:"400px";
+  margin: 15px;
+  border-radius: 5%;
+}
 
-#new { font-family: "M PLUS 1p"; }
+.map h1{
+  margin-top: 1cm;
+  color :#252525;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.map p{
+  margin-top: 0px;
+  color :#252525;
+  text-align: center;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
 
+.map span{
+  background: linear-gradient(transparent 60%, #08acfe7e 60%);
+  background-repeat: no-repeat;
+  background-size: 0;/*マーカー非表示*/
+  transition:all 1s;
+}
 
-/* Copyrights */
+/*ホバー時*/
+.map span:hover {
+  background-size: 100%;/*マーカーが文字全体に広がる*/
+}
+
+/* Google Mapを囲う要素 */
+.gmap {
+text-align: center;
+border-radius: 15%;
+}
+
+/* Google Mapのiframe */
+.gmap iframe {
+  width: 70%;
+  height: 640px;
+  border-radius: 30px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+box-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+
+.pay h1{
+  margin-top: 1cm;
+  color :#252525;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.pay p{
+  margin-top: 0px;
+  color :#252525;
+  text-align: center;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+
+.paybox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.paypay img{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 16vw;
+  border-radius: 30px;
+}
+
+.money img{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 6vw;
+  border-radius: 30px;
+}
+
+.rpay img{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 16vw;
+  height: 96px;
+  object-fit: cover;
+
+  border-radius: 30px;
+}
+
+.linepay img{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 16vw;
+
+}
+
+.about{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  
+}
+
+.about h1{
+  margin-top: 1cm;
+  color :#252525;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.about p{
+  margin-top: 0px;
+  color :#252525;
+  text-align: left;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
 
 #copyrights {
-  background: #222222;
+  background: #252525;
 
+  
   padding: 10px 0;
   text-align: center;
 }
 
 #copyrights p {
-  margin-bottom: 5px;
-
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
-
   color: #fff;
+  font-size: 18pt;
+  font-family: 'Kiwi Maru', serif;
+  margin-bottom: 20px;
+  
 }
 
 #copyrights a {
@@ -249,215 +483,234 @@ hr {
   color: #fff;
 }
 
-/* 上に戻るボタン */
-.pagetop {
-	color: #fff;
-	background-color: rgba(0,0,0,0.3);
-	text-decoration: none;
-	display: none;
-	position: fixed;
-	bottom: 1rem;
-	right: 1rem;
-	font-size: 1.5rem;
-	width: 3.3rem;
-	height: 3.3rem;
-	line-height: 3.3rem;
-	border-radius: 3.3rem;
-	text-align: center;
-	cursor: pointer;
+@media screen and (max-width: 1360px) {
+
+  
+header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 10px 6% 10px;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom:1px solid #ccc;
+  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
 }
 
-.pagetop:hover {
-	color: #fff !important;
-	background-color: #08ACFE;
-	text-decoration: none;
+.headimg {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-
-
-  body {
-    background-color: #222222;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    margin-top: 70px;
-  }
-
-  #copyrights {
-    background: #ffffff;
-  
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  #copyrights p {
-    margin-bottom: 5px;
-  
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
-  
-    color: rgb(10, 10, 10);
-  }
-  
-  #copyrights a {
-    color: #08ACFE;
-  }
-  
-  .credits {
-    color: #fff;
-  }
-
-  .pagetop {
-    color: #222222;
-    background-color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: none;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    width: 3.3rem;
-    height: 3.3rem;
-    line-height: 3.3rem;
-    border-radius: 3.3rem;
-    text-align: center;
-    cursor: pointer;
-  }
+.headnav{
+  font-size: 2em;
+  font-family: 'Darumadrop One', cursive;
 }
 
-@media screen and (max-width: 640px) {
+.headnav li {
+  margin-top: 30px;
+}
 
-  #col-lg-4s {
-    background-image: url(haikei.png);
-    font-family: "myfont";
-    font-weight: 700;
-    font-size: 16px;
-    color: #555;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    margin-top: 70px;
-    justify-content: center;
-    padding-right:10px;
-  }
-  
+nav {
+  margin-top: -60px;
+  margin-left:0;
+}
+ul {
+  margin-top: 30px;
+  list-style: none;
+  margin-left:-40px;
+}
 
-  
+h1 {
+  margin: 0; padding: 0;
+  font-size: 20px;
+}
+a {	
+  text-decoration: none;
+  color: #4b4b4b;
+}
 
-  /* Links */
-  
-  a {
-    color: #f85c37;
-    word-wrap: break-word;
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-  }
-  
-  a:hover, a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-  }
-  
-  a:before, a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-  }
-  
-  /* Bootstrap Modifications */
-
-  
-  /* WRAP SECTIONS */
-  
-  /* hello */
-  
-  
-  /* Green */
-  
-  #green {
-    background-color: #08ACFE;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
-    padding-top: 50px;
-    margin-bottom: 0px;
-  }
-  
-  #green h3 {
-    color: white;
-    font-weight: 400;
-    margin-bottom: 35px;
-  }
-  
-  #green p {
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-  }
-  
-  
-  
-  /* Social Links */
-
-  /* Image Opacity */
-  
-  
-  .grid img {
-    width: 325px;
-    height: auto;
-    justify-content: center;
-    margin: 10px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
-
-
-  }
-  
-  
-  .grid img:hover {
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 8xp rgba(0, 0, 0, .5);
-  }
-  
-  /*tiz*/
-  
-  .tiz {
-    opacity: .7;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
-  }
-  
+p{
+  font-size:5em;
+}
 
 
   
-  /* 上に戻るボタン */
-  .pagetop {
-    color: #fff;
-    background-color: rgba(0,0,0,0.3);
-    text-decoration: none;
-    display: none;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    width: 3.3rem;
-    height: 3.3rem;
-    line-height: 3.3rem;
-    border-radius: 3.3rem;
-    text-align: center;
-    cursor: pointer;
+/* Google Mapを囲う要素 */
+.gmap {
+  text-align: center;
+  border-radius: 15%;
   }
   
-  .pagetop:hover {
-    color: #fff !important;
-    background-color: #08ACFE;
-    text-decoration: none;
+  /* Google Mapのiframe */
+  .gmap iframe {
+    width: 90%;
+    height: 640px;
+    border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
   }
   
+
+  
+.about{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  
+}
+
+  .paybox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .paypay img{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 66vw;
+    border-radius: 30px;
+  }
+  
+  .money img{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 36vw;
+    border-radius: 30px;
+  }
+  
+  .rpay img{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 66vw;
+    height: 96px;
+    object-fit: cover;
+  
+    border-radius: 30px;
+  }
+  
+  .linepay img{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 66vw;
+  
+  }
+
+  
+.homepic{
+  width: 70%;
+  margin-top: 10cm;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: 'Darumadrop One', cursive;
+  font-size: 48pt;
+  color:#252525;
+}
+
+  
+.info h1{
+  margin-top: 1cm;
+  color :#252525;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+
+.info p{
+  margin-top: 0px;
+  color :#252525;
+  text-align: left;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+
+.infobox{
+  margin-top: 30px;
+  align-items: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.infobox ndt{
+  color:#08acfe;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 24pt;
+  float:left;
+}
+
+.infobox dt{
+  color:#252525;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 24pt;
+  float:left;
+}
+.infobox dd{
+  color:#252525;
+  margin-left:0px;
+  margin-top:60px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 16pt;
+  border-bottom: 2px solid #4b4b4b;
+}
+
+.infobox dl{
+  color:#4b4b4b;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  margin-left:0px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 10pt;
+}
+
+  
+.photo h1{
+  margin-top: 1cm;
+  color :#252525;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 30pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.photo p{
+  margin-top: 0px;
+  color :#252525;
+  text-align: center;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 20pt;
+  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+}
+.photo ul {
+  margin-left: -30px;
+  display: flex;
+  flex-direction: column;
+}
+.photo img{
+  width:90%;
+  margin: 15px;
+  border-radius: 5%;
+}
 }
