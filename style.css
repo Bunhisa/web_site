@@ -321,7 +321,9 @@ p{
   justify-content: center;
 }
 .photo img{
-  width:"400px";
+  width:"380px";
+  height:"380px";
+  object-fit: cover;
   margin: 15px;
   border-radius: 5%;
 }
