@@ -47,6 +47,7 @@ html {
 }
 
 .button019 a:after {
+z-index: -1;
 content: "";
 position: absolute;
 top: 50%;
