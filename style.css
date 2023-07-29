@@ -28,7 +28,7 @@ html {
 
 /* 019 */
 .button019 a {
-  z-index: -1;
+  z-index: 0;
   background: #eee;
   border-radius: 3px;
   position: relative;
@@ -48,7 +48,7 @@ html {
 }
 
 .button019 a:after {
-z-index: -1;
+z-index: 0;
 content: "";
 position: absolute;
 top: 50%;
@@ -67,12 +67,12 @@ border-right: solid 2px currentColor;
 transform: translateY(-50%) rotate(45deg);
 }
 .button019 a:hover {
-z-index: -1;
+z-index: 0;
 background: #08acfe;
 color: #FFF;
 }
 .button019 a:hover:after {
-z-index: -1;
+z-index: 0;
 right: 1.4rem;
 }
 
@@ -214,6 +214,7 @@ p{
 }
 
 .infobox{
+  z-index: -1;
   margin-top: 30px;
   align-items: left;
   margin-left: auto;
