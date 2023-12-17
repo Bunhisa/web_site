@@ -1,17 +1,18 @@
-
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 200px;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
 }
+
 /*まずはお決まりのボックスサイズ算出をborer-boxに */
 *,
 *:before,
@@ -23,7 +24,8 @@ body {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 62.5%;/*rem算出をしやすくするために*/
+  font-size: 62.5%;
+  /*rem算出をしやすくするために*/
 }
 
 /* 019 */
@@ -44,40 +46,42 @@ html {
   transition: 0.3s ease-in-out;
   font-weight: 500;
   border-radius: 30px;
-  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
 .button019 a:after {
-z-index: 1;
-content: "";
-position: absolute;
-top: 50%;
-bottom: 0;
-right: 2rem;
-font-family: 'Kiwi Maru', serif;
-font-size: 16pt;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: right 0.3s;
-width: 6px;
-height: 6px;
-border-top: solid 2px currentColor;
-border-right: solid 2px currentColor;
-transform: translateY(-50%) rotate(45deg);
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 2rem;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 16pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
 }
+
 .button019 a:hover {
-z-index: 1;
-background: #08acfe;
-color: #FFF;
+  z-index: 1;
+  background: #08acfe;
+  color: #FFF;
 }
+
 .button019 a:hover:after {
-z-index: 1;
-right: 1.4rem;
+  z-index: 1;
+  right: 1.4rem;
 }
 
 header {
-  z-index:5;
+  z-index: 5;
   padding: 10px 6% 10px;
   position: fixed;
   top: 0;
@@ -85,8 +89,8 @@ header {
   background-color: #fff;
   display: flex;
   align-items: center;
-  border-bottom:1px solid #ccc;
-  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
 .headimg {
@@ -94,7 +98,7 @@ header {
   margin-bottom: 20px;
 }
 
-.headnav{
+.headnav {
   font-size: 2em;
   font-family: 'Darumadrop One', cursive;
 }
@@ -106,6 +110,7 @@ header {
 nav {
   margin: 0 0 0 auto;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -113,20 +118,22 @@ ul {
 }
 
 h1 {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   font-size: 20px;
 }
-a {	
+
+a {
   text-decoration: none;
   color: #4b4b4b;
 }
 
-p{
-  font-size:5em;
+p {
+  font-size: 5em;
 }
 
 
-.homepic{
+.homepic {
   width: 30%;
   margin-top: 10cm;
   margin-left: auto;
@@ -134,157 +141,171 @@ p{
   display: block;
   font-family: 'Darumadrop One', cursive;
   font-size: 48pt;
-  color:#252525;
+  color: #252525;
 }
-.homesetsumei{
+
+.homesetsumei {
   font-family: 'Kiwi Maru', serif;
   margin-top: 12pt;
   text-align: center;
   font-size: 20pt;
   color: #4b4b4b;
 }
-.homesetsumei span{
+
+.homesetsumei span {
   background: linear-gradient(transparent 60%, #08acfe7e 60%);
   background-repeat: no-repeat;
-  background-size: 0;/*マーカー非表示*/
-  transition:all 1s;
+  background-size: 0;
+  /*マーカー非表示*/
+  transition: all 1s;
 }
 
 /*ホバー時*/
 .homesetsumei span:hover {
-  background-size: 100%;/*マーカーが文字全体に広がる*/
+  background-size: 100%;
+  /*マーカーが文字全体に広がる*/
 }
 
-.whatsetsumei{
+.whatsetsumei {
   margin-top: 6cm;
   padding: 10px;
   background-color: #08acfe;
 }
 
-.whatsetsumei img{
+.whatsetsumei img {
   margin-left: 6cm;
   padding: 10px;
   background-color: #fff;
 }
 
-.whatsetsumei p{
+.whatsetsumei p {
   margin-top: 0px;
-  color :#f5f5f5;
+  color: #f5f5f5;
   text-align: center;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
-.whatsetsumei h1{
+
+.whatsetsumei h1 {
   margin-top: 20px;
-  color :#f5f5f5;
+  color: #f5f5f5;
   text-align: center;
   font-family: 'Kiwi Maru', serif;
   font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
-.whatsetsumei span{
+.whatsetsumei span {
   background: linear-gradient(transparent 60%, #feee087e 60%);
   background-repeat: no-repeat;
-  background-size: 0;/*マーカー非表示*/
-  transition:all 1s;
+  background-size: 0;
+  /*マーカー非表示*/
+  transition: all 1s;
 }
 
 /*ホバー時*/
 .whatsetsumei span:hover {
-  background-size: 100%;/*マーカーが文字全体に広がる*/
+  background-size: 100%;
+  /*マーカーが文字全体に広がる*/
 }
 
-.info h1{
+.info h1 {
   margin-top: 1cm;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Kiwi Maru', serif;
   font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
-.info p{
+.info p {
   margin-top: 0px;
-  color :#252525;
+  color: #252525;
   text-align: left;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
-.infobox{
+.infobox {
   z-index: -1;
   margin-top: 30px;
   align-items: left;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 30px;
+  border-radius: 25px;
   width: 70%;
   background-color: #fff;
-  box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.15) inset;
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
 }
 
-.infobox ndt{
-  color:#08acfe;
+.infobox ndt {
+  color: #08acfe;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 44pt;
-  float:left;
+  float: left;
 }
 
-.infobox dt{
-  color:#252525;
+.infobox dt {
+  color: #252525;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 44pt;
-  float:left;
+  float: left;
 }
-.infobox dd{
-  color:#252525;
-  margin-left:280px;
+
+.infobox dd {
+  color: #252525;
+  margin-left: 280px;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 26pt;
   border-bottom: 2px solid #4b4b4b;
 }
 
-.infobox dl{
-  color:#4b4b4b;
+.infobox dl {
+  color: #4b4b4b;
   margin-top: 0px;
   padding-bottom: 10px;
-  margin-left:280px;
+  margin-left: 280px;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 20pt;
 }
 
- /*アイコンサイズの設定 */
- .material-icons.md-18 {
+/*アイコンサイズの設定 */
+.material-icons.md-18 {
   text-align: left;
   font-size: 18px;
 }
+
 .material-icons.md-24 {
   text-align: left;
   font-size: 24px;
 }
+
 .material-icons.md-36 {
   text-align: left;
   font-size: 36px;
 }
+
 .material-icons.md-48 {
   text-align: left;
   font-size: 48px;
 }
+
 .material-icons.md-64 {
   text-align: left;
   font-size: 64px;
 }
+
 .material-icons.md-128 {
   text-align: left;
   font-size: 128px;
 }
+
 .material-icons.md-256 {
   text-align: left;
   font-size: 256px;
@@ -294,183 +315,198 @@ p{
 .material-icons.md-dark {
   color: rgba(0, 0, 0, 0.54);
 }
+
 .material-icons.md-dark.md-inactive {
   color: rgba(0, 0, 0, 0.26);
 }
+
 /* 暗い背景色で、白いアイコンとして使うとき*/
 .material-icons.md-light {
   color: rgba(255, 255, 255, 1);
 }
+
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-.photo h1{
+.photo{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+.photo h1 {
   margin-top: 1cm;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Kiwi Maru', serif;
   font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
-.photo p{
+
+.photo p {
   margin-top: 0px;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
+
 .photo ul {
   display: flex;
   justify-content: center;
 }
-.photo img{
-  width:"380px";
-  height:"380px";
+
+.photo img {
+  width: 380px;
+  height: 380px;
   object-fit: cover;
   margin: 15px;
-  border-radius: 5%;
+  border-radius: 25px;
 }
 
-.map h1{
+.map h1 {
   margin-top: 1cm;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Kiwi Maru', serif;
   font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
-.map p{
+
+.map p {
   margin-top: 0px;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
-.map span{
+.map span {
   background: linear-gradient(transparent 60%, #08acfe7e 60%);
   background-repeat: no-repeat;
-  background-size: 0;/*マーカー非表示*/
-  transition:all 1s;
+  background-size: 0;
+  /*マーカー非表示*/
+  transition: all 1s;
 }
 
 /*ホバー時*/
 .map span:hover {
-  background-size: 100%;/*マーカーが文字全体に広がる*/
+  background-size: 100%;
+  /*マーカーが文字全体に広がる*/
 }
 
 /* Google Mapを囲う要素 */
 .gmap {
-text-align: center;
-border-radius: 15%;
+  text-align: center;
+  border-radius: 25px;
 }
 
 /* Google Mapのiframe */
 .gmap iframe {
   width: 70%;
   height: 640px;
-  border-radius: 30px;
--webkit-border-radius: 30px;
--moz-border-radius: 30px;
-box-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
-.pay h1{
+.pay h1 {
   margin-top: 1cm;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Kiwi Maru', serif;
-  font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  font-size: 25pt;
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
-.pay p{
+
+.pay p {
   margin-top: 0px;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
-.paybox{
+.paybox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 30px;
+  border-radius: 25px;
   width: 70%;
   background-color: #fff;
-  box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.15) inset;
   padding-top: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.paypay img{
+.paypay img {
   margin-left: 15px;
   margin-right: 15px;
   width: 16vw;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
-.money img{
+.money img {
   margin-left: 15px;
   margin-right: 15px;
   width: 6vw;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
-.rpay img{
+.rpay img {
   margin-left: 15px;
   margin-right: 15px;
   width: 16vw;
   height: 96px;
   object-fit: cover;
 
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
-.linepay img{
+.linepay img {
   margin-left: 15px;
   margin-right: 15px;
   width: 16vw;
 
 }
 
-.about{
+.about {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  
+
 }
 
-.about h1{
+.about h1 {
   margin-top: 1cm;
-  color :#252525;
+  color: #252525;
   text-align: center;
   font-family: 'Kiwi Maru', serif;
   font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
-.about p{
+
+.about p {
   margin-top: 0px;
-  color :#252525;
+  color: #252525;
   text-align: left;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
+  text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
 }
 
 #copyrights {
   background: #252525;
 
-  
+
   padding: 10px 0;
   text-align: center;
 }
@@ -480,7 +516,7 @@ box-shadow: 0 0px 25px rgba(0,0,0,0.05);
   font-size: 18pt;
   font-family: 'Kiwi Maru', serif;
   margin-bottom: 20px;
-  
+
 }
 
 #copyrights a {
@@ -491,235 +527,228 @@ box-shadow: 0 0px 25px rgba(0,0,0,0.05);
   color: #fff;
 }
 
-@media screen and (max-width: 1360px) {
-
-  
-header {
-  z-index:5;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  padding: 10px 6% 10px;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  border-bottom:1px solid #ccc;
-  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
-}
-
-.headimg {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.headnav{
-  font-size: 2em;
-  font-family: 'Darumadrop One', cursive;
-}
-
-.headnav li {
-  margin-top: 30px;
-}
-
-nav {
-  margin-top: -60px;
-  margin-left:0;
-}
-ul {
-  margin-top: 30px;
-  list-style: none;
-  margin-left:-40px;
-}
-
-h1 {
-  margin: 0; padding: 0;
-  font-size: 20px;
-}
-a {	
-  text-decoration: none;
-  color: #4b4b4b;
-}
-
-p{
-  font-size:5em;
-}
+@media screen and (max-width: 720px) {
 
 
-  
-/* Google Mapを囲う要素 */
-.gmap {
-  text-align: center;
-  border-radius: 15%;
+  header {
+    z-index: 5;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px 6% 10px;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
   }
-  
+
+  .headimg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .headnav {
+    font-size: 2em;
+    font-family: 'Darumadrop One', cursive;
+  }
+
+  .headnav li {
+    margin-top: 30px;
+  }
+
+  nav {
+    margin-top: -60px;
+    margin-left: 0;
+  }
+
+  ul {
+    margin-top: 30px;
+    list-style: none;
+    margin-left: -40px;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4b4b4b;
+  }
+
+  p {
+    font-size: 5em;
+  }
+
+
+
+  /* Google Mapを囲う要素 */
+  .gmap {
+    text-align: center;
+    border-radius: 25%;
+  }
+
   /* Google Mapのiframe */
   .gmap iframe {
     width: 90%;
     height: 640px;
-    border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
   }
-  
 
-  
-.about{
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  
-}
 
-  .paybox{
+
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+  }
+
+  .paybox {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 30px;
+    border-radius: 25px;
     width: 90%;
     background-color: #fff;
-    box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.15) inset;
     padding-top: 30px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  
-  .paypay img{
+
+  .paypay img {
     margin-left: 15px;
     margin-right: 15px;
     width: 66vw;
-    border-radius: 30px;
+    border-radius: 25px;
   }
-  
-  .money img{
+
+  .money img {
     margin-left: 15px;
     margin-right: 15px;
     width: 36vw;
-    border-radius: 30px;
+    border-radius: 25px;
   }
-  
-  .rpay img{
+
+  .rpay img {
     margin-left: 15px;
     margin-right: 15px;
     width: 66vw;
     height: 96px;
     object-fit: cover;
-  
-    border-radius: 30px;
+
+    border-radius: 25px;
   }
-  
-  .linepay img{
+
+  .linepay img {
     margin-left: 15px;
     margin-right: 15px;
     width: 66vw;
-  
+
   }
 
+
+  .homepic {
+    width: 70%;
+    margin-top: 10cm;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 48pt;
+    color: #252525;
+  }
+
+
+  .info h1 {
+    margin-top: 1cm;
+    color: #252525;
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 30pt;
+    text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
+  }
+
+  .info p {
+    margin-top: 0px;
+    color: #252525;
+    text-align: left;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 20pt;
+    text-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
+  }
+
+  .infobox {
+    margin-top: 30px;
+    align-items: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.15) inset;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .infobox ndt {
+    color: #08acfe;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 24pt;
+    float: left;
+  }
+
+  .infobox dt {
+    color: #252525;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 24pt;
+    float: left;
+  }
+
+  .infobox dd {
+    color: #252525;
+    margin-left: 0px;
+    margin-top: 60px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 16pt;
+    border-bottom: 2px solid #4b4b4b;
+  }
+
+  .infobox dl {
+    color: #4b4b4b;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 10pt;
+  }
+
+  .photo{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .photo ul {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
   
-.homepic{
-  width: 70%;
-  margin-top: 10cm;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  font-family: 'Darumadrop One', cursive;
-  font-size: 48pt;
-  color:#252525;
-}
-
-  
-.info h1{
-  margin-top: 1cm;
-  color :#252525;
-  text-align: center;
-  font-family: 'Kiwi Maru', serif;
-  font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
-}
-
-.info p{
-  margin-top: 0px;
-  color :#252525;
-  text-align: left;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
-}
-
-.infobox{
-  margin-top: 30px;
-  align-items: left;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 30px;
-  width: 90%;
-  background-color: #fff;
-  box-shadow: 0 0px 25px rgba(0,0,0,0.15) inset;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-}
-
-.infobox ndt{
-  color:#08acfe;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 24pt;
-  float:left;
-}
-
-.infobox dt{
-  color:#252525;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 24pt;
-  float:left;
-}
-.infobox dd{
-  color:#252525;
-  margin-left:0px;
-  margin-top:60px;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 16pt;
-  border-bottom: 2px solid #4b4b4b;
-}
-
-.infobox dl{
-  color:#4b4b4b;
-  margin-top: 0px;
-  padding-bottom: 10px;
-  margin-left:0px;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 10pt;
-}
-
-  
-.photo h1{
-  margin-top: 1cm;
-  color :#252525;
-  text-align: center;
-  font-family: 'Kiwi Maru', serif;
-  font-size: 30pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
-}
-.photo p{
-  margin-top: 0px;
-  color :#252525;
-  text-align: center;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 20pt;
-  text-shadow: 0 0px 25px rgba(0,0,0,0.05);
-}
-.photo ul {
-  margin-left: -30px;
-  display: flex;
-  flex-direction: column;
-}
-.photo img{
-  width:90%;
-  margin: 15px;
-  border-radius: 5%;
-}
+  .photo img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+  }
 }
